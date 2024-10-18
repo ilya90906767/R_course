@@ -55,19 +55,6 @@ sum <- num1 + num2
 print(paste("суммы", sum))
 
 
-# Read the first decimal number
-num1_str <- readline(prompt="число1: ")
-num1_comma <- as.numeric(gsub(",", ".", num1_str))
-
-# Read the second decimal number
-num2_str <- readline(prompt="число2 ")
-num2_comma <- as.numeric(gsub(",", ".", num2_str))
-
-# Calculate and print the sum
-sum2 <- num1_comma + num2_comma
-print(paste("The sum2 is:", sum2))
-
-
 transition<-function(x){
   x<-x*1000
   x<-x/3600
