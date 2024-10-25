@@ -5,9 +5,21 @@ second <- c("S", "V", "123", "NaN", "1")
 
 
 third <- rep(101, 12)
-
+print(third)
 third_numeric <- as.numeric(third)
+print(third_numeric)
 third_character <- as.character(third)
+print(third_character)
+# ```
+# > print(third)
+# [1] 101 101 101 101 101 101 101 101 101 101 101 101
+# > third_numeric <- as.numeric(third)
+# > print(third_numeric)
+# [1] 101 101 101 101 101 101 101 101 101 101 101 101
+# > third_character <- as.character(third)
+# > print(third_character)
+# [1] "101" "101" "101" "101" "101" "101" "101" "101" "101" "101" "101" "101"
+# ```
 
 # 2) Создайте вектор случайных чисел при помощи функции runif().
 rand_vec <- runif(50, -20, 100)
@@ -25,10 +37,10 @@ log_vec <- log2(abs_vec)
 
 
 names(log_vec) <- letters[1:length(log_vec)]
-
+print(names(log_vec) )
 
 replaced_alphabet <- log_vec[c("e", "f")]
-
+print(replaced_alphabet)
 
 results_of_rand_sum <- sum(rand_vec)
 results_of_rand_prod <- prod(rand_vec)
